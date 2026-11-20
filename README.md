@@ -6,6 +6,8 @@ inga kakor, inga nätverksanrop.
 
 **Spela:** https://glosboken.skolappar.com · En del av [Skolappar](https://www.skolappar.com) – pedagogiska appar av föräldrar · öppen källkod (MIT)
 
+![Glosboken](public/kort.png)
+
 ## Vad du kan göra
 
 - **Klistra in en ordlista**, en glosa per rad. Tabb, semikolon, `|`, komma eller
