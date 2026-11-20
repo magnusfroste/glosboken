@@ -48,8 +48,8 @@ Bygget serveras av nginx på port 8080 med `deploy/nginx.conf`.
 ## Integritet
 
 - Ingen spårning, inga kakor, ingen analys, inget konto.
-- Inga anrop till externa servrar. Typsnittet Fredoka ligger i appen (`public/fonts/`);
-  `@fontsource/inter` följer också med i bygget. Inga typsnitt hämtas utifrån.
+- Inga anrop till externa servrar. Typsnittet Fredoka ligger i appen (`public/fonts/`).
+  Inga typsnitt hämtas utifrån.
 - Listorna och dina resultat sparas bara i `localStorage` under nyckeln `glosboken-v1`.
   Rensa webbläsardata så är det borta.
 - En delningslänk innehåller hela listan i adressens `#`-del. Den delen skickas inte till
