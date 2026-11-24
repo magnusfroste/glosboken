@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { report } from "./lib/skolappar";
 import {
   accuracy,
   answerMatches,
@@ -394,6 +395,15 @@ function Study({ deck, grade, onDone }: { deck: Deck; grade: (card: Card, ok: bo
   });
 
   const finished = !(queue.length > 0) || index >= queue.length;
+
+  useEffect(() => {
+    if (queue.length > 0) report("round_start");
+  }, []);
+
+  useEffect(() => {
+    if (finished && queue.length > 0) report("round_done", Math.round((tally.right / queue.length) * 100));
+  }, [finished]);
+
   if (finished) {
     return (
       <div className="flex flex-col items-center gap-3 card">
@@ -474,6 +484,14 @@ function Test({ deck, onDone }: { deck: Deck; onDone: () => void }) {
   useEffect(() => {
     if (!done) inputRef.current?.focus();
   }, [index, done]);
+
+  useEffect(() => {
+    if (cards.length > 0) report("round_start");
+  }, []);
+
+  useEffect(() => {
+    if (done && cards.length > 0) report("round_done", Math.round((results.filter((r) => r.ok).length / cards.length) * 100));
+  }, [done]);
 
   const submit = () => {
     if (!card) return;
