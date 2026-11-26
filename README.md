@@ -4,7 +4,7 @@ Ett gratis glosprogram för skolan, från åk 4 till gymnasiet. Klistra in vecka
 begrepp och träna med kort som kommer tillbaka oftare ju sämre du kan dem. Ingen inloggning,
 inga kakor, inga nätverksanrop.
 
-**Spela:** https://glosboken.skolappar.com · En del av [Skolappar](https://www.skolappar.com) – pedagogiska appar av föräldrar · öppen källkod (MIT)
+**Spela:** https://glosboken.skolappar.org · En del av [Skolappar](https://www.skolappar.org) – pedagogiska appar av föräldrar · öppen källkod (MIT)
 
 ![Glosboken](public/kort.png)
 
