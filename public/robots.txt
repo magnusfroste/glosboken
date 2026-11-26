@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://glosboken.skolappar.com/sitemap.xml
+Sitemap: https://glosboken.skolappar.org/sitemap.xml
